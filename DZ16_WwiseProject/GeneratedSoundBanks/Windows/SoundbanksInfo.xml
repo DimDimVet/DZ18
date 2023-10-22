@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1748863009" Type="User" Language="English(US)" Hash="{5DB3D8BA-FB8F-C071-CB18-4D4F7714E288}">
+			<ShortName>DZ16SoundBank</ShortName>
+			<Path>English(US)/DZ16SoundBank.bnk</Path>
+			<Media>
+				<File Id="210079523" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>e94b39a6f81b361.wav</ShortName>
+					<CachePath>Voices/English(US)/e94b39a6f81b361_10C4C929.wem</CachePath>
+				</File>
+				<File Id="493177475" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>c9a5c809b57a0d0.wav</ShortName>
+					<CachePath>Voices/English(US)/c9a5c809b57a0d0_10C4C929.wem</CachePath>
+				</File>
+				<File Id="647145390" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>airfox-final-night.wav</ShortName>
+					<CachePath>Voices/English(US)/airfox-final-night_10C4C929.wem</CachePath>
+				</File>
+				<File Id="785816733" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>877427.wav</ShortName>
+					<CachePath>Voices/English(US)/877427_10C4C929.wem</CachePath>
+				</File>
+				<File Id="837605082" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>05841.wav</ShortName>
+					<CachePath>Voices/English(US)/05841_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1068029118" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>5430e089a52a3a1.wav</ShortName>
+					<CachePath>Voices/English(US)/5430e089a52a3a1_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2939992438" Name="FonEvent" DurationType="OneShot" DurationMin="97.16351" DurationMax="97.16351">
+					<MediaRefs>
+						<MediaRef Id="647145390"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3716684259" Name="GunEvent" DurationType="OneShot" DurationMin="3.2740135" DurationMax="3.2740135">
+					<MediaRefs>
+						<MediaRef Id="210079523"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2143067862" Name="Lut2Event" DurationType="OneShot" DurationMin="0.14548753" DurationMax="0.14548753">
+					<MediaRefs>
+						<MediaRef Id="785816733"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4258014488" Name="LutEvent" DurationType="OneShot" DurationMin="10.155419" DurationMax="10.155419">
+					<MediaRefs>
+						<MediaRef Id="493177475"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3916844989" Name="Step2Event" DurationType="OneShot" DurationMin="9.728667" DurationMax="9.728667">
+					<MediaRefs>
+						<MediaRef Id="1068029118"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3035224157" Name="StepEvent" DurationType="OneShot" DurationMin="47.301517" DurationMax="47.301517">
+					<MediaRefs>
+						<MediaRef Id="837605082"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{F97C3C04-64B7-E542-A468-FD2784D05F12}</FileHash>
+</SoundBanksInfo>

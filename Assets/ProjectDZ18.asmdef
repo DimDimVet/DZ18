@@ -1,0 +1,27 @@
+{
+    "name": "ProjectDZ18",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:57c32fc907df0f54e8e6e8f0d2488336",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:60bfecf5cb232594891bc622f40d6bed",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:831409e8f9d13b5479a3baef9822ad34",
+        "GUID:ff6de30450f3748908ff580f6ec64d9a",
+        "GUID:3df6fad99a3176e4da1c5eac383a0b88",
+        "GUID:e83fa343858117147aa3a81bc977cd1f",
+        "GUID:94e1de2458b07d0bf1e9f13e6ae06443",
+        "GUID:e63a64384cc3ef04cac761c1ce76e9c2",
+        "GUID:d0bf1e9f644394e1de13e6ae02458b07"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

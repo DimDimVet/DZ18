@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2143067862	Lut2Event			\Default Work Unit\Lut2Event	
+	2939992438	FonEvent			\Default Work Unit\FonEvent	
+	3035224157	StepEvent			\Default Work Unit\StepEvent	
+	3716684259	GunEvent			\Default Work Unit\GunEvent	
+	3916844989	Step2Event			\Default Work Unit\Step2Event	
+	4258014488	LutEvent			\Default Work Unit\LutEvent	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	210079523	e94b39a6f81b361	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\e94b39a6f81b361_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\e94b39a6f81b361		577632
+	493177475	c9a5c809b57a0d0	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\c9a5c809b57a0d0_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\c9a5c809b57a0d0		1791512
+	647145390	airfox-final-night	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\airfox-final-night_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\airfox-final-night		17139740
+	785816733	877427	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\877427_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\877427		25760
+	837605082	05841	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\05841_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\05841		12720480
+	1068029118	5430e089a52a3a1	E:\DZ16\DZ16_WwiseProject\.cache\Windows\Voices\English(US)\5430e089a52a3a1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\5430e089a52a3a1		4967520
+

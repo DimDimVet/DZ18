@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E04855AB-3B1C-4CA8-9436-078F1C442E34}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{E04855AB-3B1C-4CA8-9436-078F1C442E34}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="DZ16SoundBank" ID="{3B5C5437-CDD2-4F62-A264-992CBAC6D035}">
+					<ObjectInclusionList>
+						<ObjectRef Name="FonEvent" ID="{996D657F-B9E0-40BD-851F-66C74E82FC8C}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StepEvent" ID="{1A218C13-6FEE-431A-9B6B-B7D556785589}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Lut2Event" ID="{E604A945-A0EF-4852-8713-0D2D1ABC5203}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LutEvent" ID="{CF7F0C1A-E3D8-4B2C-BDED-3AB9C912B467}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Step2Event" ID="{EB5E7A8A-75FD-4C2B-8CC1-05D9F556B8E7}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GunEvent" ID="{DAFC2A1A-4DDF-4CD5-9CBC-6FA660D18D17}" WorkUnitID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{ECBCD4E1-74D5-4C00-BDC2-4DA8FFBC058A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="GunEvent" ID="{DAFC2A1A-4DDF-4CD5-9CBC-6FA660D18D17}">
+					<ChildrenList>
+						<Action Name="" ID="{D9B48A7B-39BE-4FFC-B328-83176C0896F7}" ShortID="936615707">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="e94b39a6f81b361" ID="{1EFBFD87-E773-4215-98CB-7397AD8A56B3}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LutEvent" ID="{CF7F0C1A-E3D8-4B2C-BDED-3AB9C912B467}">
+					<ChildrenList>
+						<Action Name="" ID="{3B7CC982-C788-4EDB-AD97-ECCEEFB2DDBA}" ShortID="30451510">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="c9a5c809b57a0d0" ID="{1E816816-A6C3-4F49-A80B-8A571FEB0143}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FonEvent" ID="{996D657F-B9E0-40BD-851F-66C74E82FC8C}">
+					<ChildrenList>
+						<Action Name="" ID="{13902633-FDF4-4E6E-A957-D8A4A1D3E316}" ShortID="406724304">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="airfox-final-night" ID="{D83FF909-0AD1-4374-A432-A14AF819BB77}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lut2Event" ID="{E604A945-A0EF-4852-8713-0D2D1ABC5203}">
+					<ChildrenList>
+						<Action Name="" ID="{3739132D-B8B2-44C8-B9EA-E8EC04A55D70}" ShortID="305422569">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="877427" ID="{93CC1B27-FEFC-4686-882F-3D521BB5A58F}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StepEvent" ID="{1A218C13-6FEE-431A-9B6B-B7D556785589}">
+					<ChildrenList>
+						<Action Name="" ID="{E2E35CF4-036F-4219-AADD-695FEB6D20A8}" ShortID="549260434">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="05841" ID="{228B1BAE-B036-4EE5-8787-84DD5690CBEA}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Step2Event" ID="{EB5E7A8A-75FD-4C2B-8CC1-05D9F556B8E7}">
+					<ChildrenList>
+						<Action Name="" ID="{259087BE-FC81-4408-8D5C-4239C20010A4}" ShortID="129572897">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="5430e089a52a3a1" ID="{600F0937-BF91-4C84-8DA0-1D384BE23B8B}" WorkUnitID="{8E89BB1E-6001-4221-BBAB-D3B37D8CEA40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
