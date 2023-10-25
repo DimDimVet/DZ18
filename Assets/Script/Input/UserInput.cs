@@ -9,6 +9,7 @@ public class UserInput : MonoBehaviour
     public bool IsMove { get { return isMove; } /*set { isMove = value; }*/ }
 
     private MapCurrent inputAction;//Кэш переменной класса MapCurrent(new input)
+    public MapCurrent InputAction { get { return inputAction; }}
 
     private void Start()
     {
