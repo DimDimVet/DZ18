@@ -10,7 +10,6 @@ using UnityEngine.Windows;
 public class NewTestScript
 {
     private Healt _char;
-    private MovePlayer _input;
     //tresh
     //// A Test behaves as an ordinary method
     //[Test]
@@ -27,27 +26,33 @@ public class NewTestScript
     {
         StartTestMetod();
     }
+    private void StartTestMetod()
+    {
+        SceneManager.LoadScene(0);//загрузим сцену
+    }
+
+    [TearDown]
+    public void Teardown()
+    {
+        SceneManager.UnloadScene(0);//загрузим сцену
+        //UnityEngine.Object.Destroy(_char1.gameObject);
+    }
 
     [UnityTest]//Первая группа тестов
     public IEnumerator A_PlayerTest()
     {
         yield return new WaitForSeconds(5);
         FindObjectPlayer();
-        FindObject1();
         PosTestMetod();
 
         //yield return null;
         //Assert.AreEqual(true,true);//проверим что true равен true
     }
 
-    private void StartTestMetod()
-    {
-        SceneManager.LoadScene(0);//загрузим сцену
-    }
-
     private void FindObjectPlayer()
     {
-        _char = GameObject.FindObjectOfType<Healt>();//найдем объект со скриптом
+_char = GameObject.FindObjectOfType<Healt>();//найдем объект со скриптом
+
     }
 
     private void PosTestMetod()
@@ -58,7 +63,19 @@ public class NewTestScript
     [UnityTest]//Вторая группа тестов
     public IEnumerator B_HealtPlayerTest()
     {
+        if (_char == null)
+        {
+            yield return null;
+        }
 
+        _char.HealtCount = 0;
+        yield return new WaitForSeconds(1);
+        UnityEngine.Assertions.Assert.IsNull(_char);//объект должен быть нулем
+    }
+
+    [UnityTest]//Вторая группа тестов
+    public IEnumerator C_HealtPlayerTest()
+    {
         if (_char == null)
         {
             yield return null;
@@ -67,36 +84,6 @@ public class NewTestScript
         //_char.HealtCount = 0;
         //yield return new WaitForSeconds(1);
         //UnityEngine.Assertions.Assert.IsNull(_char);//объект должен быть нулем
-    }
-
-    [UnityTest]
-    public IEnumerator C_ResponseInput()
-    {
-        yield return new WaitForSeconds(1);
-        FindObject1();
-        PosTestMetod1();
-        //yield return new WaitForSeconds(1);
-        //FindObject1();
-        //PosTestMetod1();
-
-        //if (_input == null)
-        //{
-        //    yield return null;
-        //}
-
-        //yield return new WaitForSeconds(2);
-        //PosTestMetod();
-    }
-
-    private void FindObject1()
-    {
-        _input = GameObject.FindObjectOfType<MovePlayer>();//найдем объект со скриптом
-        Debug.Log(_input);
-    }
-
-    private void PosTestMetod1()
-    {
-        UnityEngine.Assertions.Assert.IsNotNull(_input);
     }
 }
 

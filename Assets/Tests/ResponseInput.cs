@@ -9,43 +9,72 @@ using UnityEngine.TestTools;
 
 public class ResponseInput
 {
-    private MovePlayer _input;
-
-    //[SetUp]//под этим мы указываем метод который определит последовательсность контроля
-    //public void TestSetup()
+    private Healt _char;
+    //tresh
+    //// A Test behaves as an ordinary method
+    //[Test]
+    //public void NewTestScriptSimplePasses()
     //{
-    //    StartTestMetod();
+    //    // Use the Assert class to test conditions
     //}
 
-    //private void StartTestMetod()
-    //{
-    //    SceneManager.LoadScene(0);//загрузим сцену
+    //// A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
+    //// `yield return null;` to skip a frame.
 
-    //}
-
-    [UnityTest]
-    public IEnumerator C_ResponseInput()
+    [SetUp]//под этим мы указываем метод который определит последовательсность контроля
+    public void TestSetup()
     {
+        StartTestMetod();
+    }
+    private void StartTestMetod()
+    {
+        SceneManager.LoadScene(0);//загрузим сцену
+    }
+
+    [UnityTest]//Первая группа тестов
+    public IEnumerator A_PlayerTest()
+    {
+        yield return new WaitForSeconds(5);
+        FindObjectPlayer();
+        PosTestMetod();
+
+        //yield return null;
+        //Assert.AreEqual(true,true);//проверим что true равен true
+    }
+
+    private void FindObjectPlayer()
+    {
+        _char = GameObject.FindObjectOfType<Healt>();//найдем объект со скриптом
+    }
+
+    private void PosTestMetod()
+    {
+        UnityEngine.Assertions.Assert.IsNotNull(_char);
+    }
+
+    [UnityTest]//Вторая группа тестов
+    public IEnumerator B_HealtPlayerTest()
+    {
+        if (_char == null)
+        {
+            yield return null;
+        }
+
+        _char.HealtCount = 0;
         yield return new WaitForSeconds(1);
-        //FindObject1();
-        //PosTestMetod1();
-        //if (_input == null)
-        //{
-        //    yield return null;
-        //}
-
-        //yield return new WaitForSeconds(2);
-        //PosTestMetod();
+        UnityEngine.Assertions.Assert.IsNotNull(_char);//объект должен быть нулем
     }
 
-    private void FindObject1()
+    [UnityTest]//Вторая группа тестов
+    public IEnumerator C_HealtPlayerTest()
     {
-        _input = GameObject.FindObjectOfType<MovePlayer>();//найдем объект со скриптом
-        Debug.Log(_input);
-    }
+        if (_char == null)
+        {
+            yield return null;
+        }
 
-    private void PosTestMetod1()
-    {
-        UnityEngine.Assertions.Assert.IsNotNull(_input);
+        //_char.HealtCount = 0;
+        //yield return new WaitForSeconds(1);
+        //UnityEngine.Assertions.Assert.IsNull(_char);//объект должен быть нулем
     }
 }
