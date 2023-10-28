@@ -3,7 +3,7 @@ using UnityEngine;
 public class UserInput : MonoBehaviour
 {
     private InputData inputData;//ѕередадим данные
-    public InputData InputData { get { return inputData; } /*set { inputData = value; }*/ }
+    public InputData InputData { get { return inputData; } set { inputData = value; } }
 
     private bool isMove=true;//разрешение на событие движени€
     public bool IsMove { get { return isMove; } /*set { isMove = value; }*/ }

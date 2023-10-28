@@ -7,7 +7,6 @@ public class IAPController : MonoBehaviour
 {
     [SerializeField] string PurchaseID1;
 
-
     public void OnPurchaseCompleted(Product product)
     {
         print($"Куплен {PurchaseID1}");

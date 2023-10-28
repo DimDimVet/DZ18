@@ -18,9 +18,9 @@ public class Bull : MonoBehaviour
     private Collider collaiderBullet;
     private Vector3 startPos;
     public Vector3 EndPos;
-    private Renderer rendererGO;
+    public Renderer rendererGO;
     private RaycastHit hit;
-    private bool isStop;
+    public bool isStop;
 
     private float shootDelay=5f;
     private float shootTime = float.MinValue;
@@ -69,7 +69,7 @@ public class Bull : MonoBehaviour
         spriteRender.enabled = false;
     }
 
-    private void MoveBull()
+    public void MoveBull()
     {
         if (isStop)
         {

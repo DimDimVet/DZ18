@@ -58,6 +58,7 @@ public class Healt : MonoBehaviour
     public void DestoyGO()
     {
         RewardedAds();
+        if (thisHash == 0) { return; }
         RegistratorConstruction rezult =GetNetworkManager();
         if (rezult.NetworkManager!=null)//объект созданный через фотон, убиваем через фотон
         {

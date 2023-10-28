@@ -7,11 +7,11 @@ public class MovePlayer :UserInput
     [SerializeField] private MoveSettings moveSettings;
     [SerializeField] private Transform cameraPoint;
 
-    private float speedMove;
+    public float speedMove;
     private Transform transformCamera;
     private float2 angleCamera;
 
-    private bool isRun = false;//разрешение на работу
+    public bool isRun = false;//разрешение на работу
 
     private RegistratorConstruction rezultCamera;
 
@@ -42,16 +42,20 @@ public class MovePlayer :UserInput
         }
     }
 
-    private void Move()
+    public void Move()
     {
         if (/*PhotonView.Get(this.gameObject).IsMine &&*/ isRun)//проверим принадлежность текущего клиента и разрешение
         {
             //камера
-            rezultCamera.CameraMove.GetTransformPointCamera = transformCamera;
-            angleCamera = rezultCamera.CameraMove.AngleCamera;
-            //мыш
-            transform.Rotate(Vector3.up, angleCamera.x);//поворот мышью
-            transformCamera = cameraPoint;
+            if (rezultCamera.CameraMove != null)
+            {
+                rezultCamera.CameraMove.GetTransformPointCamera = transformCamera;
+                angleCamera = rezultCamera.CameraMove.AngleCamera;
+                //мыш
+                transform.Rotate(Vector3.up, angleCamera.x);//поворот мышью
+                transformCamera = cameraPoint;
+            }
+
             //кнопки и канвас
             if (InputData.Move.y > 0)
             {

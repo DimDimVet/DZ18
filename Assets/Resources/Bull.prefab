@@ -40,7 +40,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443474214289328720}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -176,7 +176,7 @@ Transform:
   m_GameObject: {fileID: 666899814636228908}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.741, y: 0.459, z: 2.953}
+  m_LocalPosition: {x: -1.741, y: 16.459, z: 2.953}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -198,7 +198,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666899814636228908}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -271,7 +271,9 @@ MonoBehaviour:
   trailRender: {fileID: 4405101892173417834}
   bullSettings: {fileID: 11400000, guid: ae4b50ac596666c41a5720a5ac194a5e, type: 2}
   decalGO: {fileID: 8350991600075947674, guid: fcee69e459e9fcf4ca26dabade78b8ee, type: 3}
-  EndPos: {x: 0, y: 0, z: 0}
+  EndPos: {x: -1.741, y: 16.459, z: 2.953}
+  rendererGO: {fileID: 1352295864046833849}
+  isStop: 0
 --- !u!114 &5497716382251532106
 MonoBehaviour:
   m_ObjectHideFlags: 0
